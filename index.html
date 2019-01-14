@@ -3,19 +3,19 @@
    
   </head>
   <body>
+    <p id="text> </p>
      <script>
     var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-    window.alert(mydata.name);
+    docuemnt.getElementById('text').innerHTML = mydata.name;
   }
 };
 
 xmlhttp.open("GET" , "sample.json",true);
 xmlhttp.send();
-location.reload();
     </script>
   </body>
 </html>
