@@ -3,14 +3,14 @@
    
   </head>
   <body>
-    <p id="text"> </p>
+    <h1 id="guy"> </h1>
      <script>
     var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-    documemnt.getElementById('text').innerHTML = mydata.name;
+    documemnt.getElementById('guy').innerHTML = mydata.name + " is " + mydata.age;
   }
 };
 
