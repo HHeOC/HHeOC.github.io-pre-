@@ -10,7 +10,7 @@
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-    document.getElementById('guy').innerHTML = mydata.name + " is " mydata.age + ", his lover is jordan;
+    document.getElementById('guy').innerHTML = mydata.name + " is " mydata.age + ", his lover is jordan";
   }
 };
 
