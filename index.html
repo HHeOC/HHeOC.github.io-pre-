@@ -10,7 +10,7 @@
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-    document.getElementById('guy').innerHTML = mydata.foods[1].name + " is $" + mydata.foods[1].price + " with " + mydata.foods[1].kilos + " kilograms.";
+    document.getElementById('guy').innerHTML = mydata.foods[1].name + " is $" + mydata.foods[1].price + " and " + mydata.foods[1].kilos + " kilograms.";
   }
 };
 
