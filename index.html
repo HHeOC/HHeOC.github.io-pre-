@@ -1,21 +1,38 @@
 <html>
   <head>
-   
+    <link rel="stylesheet" type="text/css" href="store.css">
   </head>
   <body>
-    <h1 id="guy"></h1>
-     <script>
-    var xmlhttp = new XMLHttpRequest();
-
-xmlhttp.onreadystatechange = function(){
-  if(this.readyState == 4 && this.status == 200){
-    var mydata = JSON.parse(this.responseText);
-    document.getElementById('guy').innerHTML = mydata.foods[1].name + " is $" + mydata.foods[1].price + " and " + mydata.foods[1].kilos + " kilograms.";
-  }
-};
-
-xmlhttp.open("GET" , "bento.json",true);
-xmlhttp.send();
-    </script>
+    <div id="StoreTitle">
+      <h1 id="storeT">Github Chicken Six Star Resturant</h1>
+      <img id="logo" src="https://images-platform.99static.com/33-pyDLTARxrpq5t1hn8p_ibRNU=/193x100:996x903/500x500/top/smart/99designs-contests-attachments/71/71759/attachment_71759424" height="60vh" width="150vw">
+    </div>
+    <h1 id="storemenu">MENU</h1>
+    <div id="food1">
+      <h1 id="food1Name"></h1>
+      <p id="food1price"></p>
+    <div>
+    How many do you want?<input type="number" id="food1Quatity">
+    <button id="food1Button">Purchase</button>
+    </div>
+      
+    </div>
+     <div id="food2">
+      
+    </div>
+     <div id="food3">
+      
+    </div>
+     <div id="food4">
+      
+    </div>
+     <div id="food5">
+      
+    </div>
+     <div id="food6">
+      
+    </div>
+    <input type="submit" value="submit">
+    <script src="store.js"></script>
   </body>
 </html>
