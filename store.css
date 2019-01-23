@@ -5,6 +5,10 @@ body{
 div{  width:33vw;
   height:43vh;
 }
+#box1{
+  background-color:gray;
+  opacity:0.5;
+};
 #storeT{
    text-align:center;
    font-size:50px;
