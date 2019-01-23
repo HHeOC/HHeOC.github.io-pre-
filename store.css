@@ -5,12 +5,6 @@ body{
 div{  width:33vw;
   height:43vh;
 }
-#box1{
-  width:33vw;
-  height:10vh;
-  background-color:gray;
-  opacity:0.8;
-};
 #storeT{
    text-align:center;
    font-size:50px;
