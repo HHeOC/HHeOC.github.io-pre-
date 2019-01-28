@@ -1,5 +1,8 @@
+//global variables for food and price
 var foods =[];
-var prices= []; 
+var prices= [];
+
+//JSON file function. attacch json objects
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
@@ -18,7 +21,7 @@ xmlhttp.onreadystatechange = function(){
     prices.push(priceD2);
     document.getElementById('food2Name').innerHTML = Storedata.foods[1].name;
     document.getElementById('food2price').innerHTML = "$" + Storedata.foods[1].price;
-   //food number 3
+    //food number 3
     var foodN3= Storedata.foods[2].name;
     foods.push(foodN3);
     var priceD3 = Storedata.foods[2].price;
@@ -50,7 +53,10 @@ xmlhttp.onreadystatechange = function(){
 };
 xmlhttp.open("GET" , "store.json", true);
 xmlhttp.send();
-//food1
+
+//following are the button for purchase
+
+//button 1
 function ShowResult1(){
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
@@ -62,6 +68,8 @@ function ShowResult1(){
  olTag.appendChild(newli);
   }
 }
+
+//button 2
 function ShowResult2(){
   var Result2 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
@@ -73,6 +81,59 @@ function ShowResult2(){
  olTag.appendChild(newli);
   }
 }
+
+//button 3
+function ShowResult3(){
+  var Result3 = document.getElementById('food3Quatity').value;
+  document.getElementById('food3Quatity').value = "";
+  if(Result3 >0){
+  var newli = document.createElement('li');
+  var newText = document.createTextNode( Result3 +" " + foods[2]);
+ newli.appendChild(newText);
+ var olTag = document.getElementsByTagName('ol')[0];
+ olTag.appendChild(newli);
+  }
+}
+
+//button 4
+function ShowResult4(){
+  var Result4 = document.getElementById('food4Quatity').value;
+  document.getElementById('food4Quatity').value = "";
+  if(Result4 >0){
+  var newli = document.createElement('li');
+  var newText = document.createTextNode( Result2 +" " + foods[3]);
+ newli.appendChild(newText);
+ var olTag = document.getElementsByTagName('ol')[0];
+ olTag.appendChild(newli);
+  }
+}
+
+//button 5
+function ShowResult5(){
+  var Result5 = document.getElementById('food5Quatity').value;
+  document.getElementById('food5Quatity').value = "";
+  if(Result5 >0){
+  var newli = document.createElement('li');
+  var newText = document.createTextNode( Result5 +" " + foods[4]);
+ newli.appendChild(newText);
+ var olTag = document.getElementsByTagName('ol')[0];
+ olTag.appendChild(newli);
+  }
+}
+
+//button 6
+function ShowResult6(){
+  var Result6 = document.getElementById('food6Quatity').value;
+  document.getElementById('food6Quatity').value = "";
+  if(Result6 >0){
+  var newli = document.createElement('li');
+  var newText = document.createTextNode( Result6 +" " + foods[5]);
+ newli.appendChild(newText);
+ var olTag = document.getElementsByTagName('ol')[0];
+ olTag.appendChild(newli);
+  }
+}
+
 function nextpage(){
   location.href="result.html";
   document.getElementById('menu1').innerHTML = localStorage.getItem('Result1');
