@@ -4,18 +4,48 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
     var Storedata = JSON.parse(this.responseText);
+    //food number 1
     var foodN1= Storedata.foods[0].name;
     foods.push(foodN1);
     var priceD1 = Storedata.foods[0].price;
     prices.push(priceD1);
     document.getElementById('food1Name').innerHTML = Storedata.foods[0].name;
     document.getElementById('food1price').innerHTML = "$" + Storedata.foods[0].price;
+    //food number 2
     var foodN2= Storedata.foods[1].name;
     foods.push(foodN2);
     var priceD2 = Storedata.foods[1].price;
     prices.push(priceD2);
     document.getElementById('food2Name').innerHTML = Storedata.foods[1].name;
     document.getElementById('food2price').innerHTML = "$" + Storedata.foods[1].price;
+   //food number 3
+    var foodN3= Storedata.foods[2].name;
+    foods.push(foodN3);
+    var priceD3 = Storedata.foods[2].price;
+    prices.push(priceD3);
+    document.getElementById('food3Name').innerHTML = Storedata.foods[2].name;
+    document.getElementById('food3price').innerHTML = "$" + Storedata.foods[2].price;
+    //food number 4
+    var foodN4= Storedata.foods[3].name;
+    foods.push(foodN4);
+    var priceD4 = Storedata.foods[3].price;
+    prices.push(priceD4);
+    document.getElementById('food4Name').innerHTML = Storedata.foods[3].name;
+    document.getElementById('food4price').innerHTML = "$" + Storedata.foods[3].price;
+    //food number 5
+    var foodN5= Storedata.foods[4].name;
+    foods.push(foodN5);
+    var priceD5 = Storedata.foods[4].price;
+    prices.push(priceD5);
+    document.getElementById('food5Name').innerHTML = Storedata.foods[4].name;
+    document.getElementById('food5price').innerHTML = "$" + Storedata.foods[4].price;
+    //food number 6
+    var foodN6= Storedata.foods[5].name;
+    foods.push(foodN6);
+    var priceD6 = Storedata.foods[5].price;
+    prices.push(priceD6);
+    document.getElementById('food6Name').innerHTML = Storedata.foods[5].name;
+    document.getElementById('food6price').innerHTML = "$" + Storedata.foods[5].price;
 }
 };
 xmlhttp.open("GET" , "store.json", true);
