@@ -50,6 +50,7 @@ xmlhttp.onreadystatechange = function(){
 };
 xmlhttp.open("GET" , "store.json", true);
 xmlhttp.send();
+//food1
 function ShowResult1(){
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
