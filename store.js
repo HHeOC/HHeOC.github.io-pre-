@@ -31,7 +31,7 @@ function ShowResult1(){
  olTag.appendChild(newli);
   }
 }
-function ShowResult1(){
+function ShowResult2(){
   var Result1 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
   if(Result1 >0){
