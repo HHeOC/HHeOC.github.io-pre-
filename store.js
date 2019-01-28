@@ -59,7 +59,7 @@ xmlhttp.send();
 //button 1
 function ShowResult1(){
   var PbeforeT = prices[0];
-  var ActualP = PbeforeT * tax;
+  var ActualP = (PbeforeT * tax).tofixed(2);
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
   if(Result1 >0){
@@ -73,11 +73,13 @@ function ShowResult1(){
 
 //button 2
 function ShowResult2(){
+    var PbeforeT = prices[1];
+  var ActualP = (PbeforeT * tax).tofixed(2);
   var Result2 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
   if(Result2 >0){
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result2 +" " + foods[1]);
+  var newText = document.createTextNode( Result2 +" " + foods[1] + " $ " + ActualP);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
