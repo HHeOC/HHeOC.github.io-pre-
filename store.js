@@ -1,7 +1,7 @@
 //global variables for food and price
 var foods =[];
 var prices= [];
-var tax = 4.712;
+var tax = 1.04712;
 //JSON file function. attacch json objects
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
@@ -59,12 +59,13 @@ xmlhttp.send();
 //button 1
 function ShowResult1(){
   var PbeforeT = prices[0];
-  var ActualP = (PbeforeT * tax).tofixed(2);
+  var PafterT = PbeforeT * tax;
+  var AP = PafterT.tofixed(2)
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
   if(Result1 >0){
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result1 +" " + foods[0] + " $" + ActualP);
+  var newText = document.createTextNode( Result1 +" " + foods[0] + " $" + AP);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
@@ -73,13 +74,14 @@ function ShowResult1(){
 
 //button 2
 function ShowResult2(){
-    var PbeforeT = prices[1];
-  var ActualP = (PbeforeT * tax).tofixed(2);
+  var PbeforeT = prices[1];
+  var PafterT = PbeforeT * tax;
+  var AP = PafterT.tofixed(2)
   var Result2 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
   if(Result2 >0){
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result2 +" " + foods[1] + " $" + ActualP);
+  var newText = document.createTextNode( Result2 +" " + foods[1] + " $" + AP);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
