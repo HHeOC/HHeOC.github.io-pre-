@@ -1,7 +1,7 @@
 //global variables for food and price
 var foods =[];
 var prices= [];
-
+var tax = 4.712;
 //JSON file function. attacch json objects
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
@@ -58,11 +58,13 @@ xmlhttp.send();
 
 //button 1
 function ShowResult1(){
+  var PbeforeT = prices[0];
+  var ActualP = PbeforeT * tax;
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
   if(Result1 >0){
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result1 +" " + foods[0]);
+  var newText = document.createTextNode( Result1 +" " + foods[0] + " $ " + ActualP);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
