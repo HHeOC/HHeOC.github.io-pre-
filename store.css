@@ -79,3 +79,9 @@ input{
   margin-top:-43vh;
   border-radius:25px;
 }
+#result{
+  width:98.5vw;
+  height:40vh;
+  background-color:white;
+  opacity:0.7;
+}
