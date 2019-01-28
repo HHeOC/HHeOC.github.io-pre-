@@ -32,9 +32,9 @@ function ShowResult1(){
   }
 }
 function ShowResult2(){
-  var Result1 = document.getElementById('food2Quatity').value;
+  var Result2 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
-  if(Result1 >0){
+  if(Result2 >0){
   var newli = document.createElement('li');
   var newText = document.createTextNode( Result1 +" " + foods[1]);
  newli.appendChild(newText);
