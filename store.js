@@ -16,7 +16,7 @@ function ShowResult1(){
   document.getElementById('food1Quatity').value = "";
   if(Result1 >0){
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result1 + food1[0]);
+  var newText = document.createTextNode( Result1 +" " + food1[0]);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
