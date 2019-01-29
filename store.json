@@ -1,63 +1,63 @@
 {
-  "foods":[
-    {
-      "name":"Curry Chicken Katsu",
-      "price":10.95,
-      "piece":1,
-      "sides":[
-        "carrot",
-        "beans",
-        "potato",
-        "rice"
-        ]
-    },
-    {
-      "name":"Crispy Fried Chicken",
-      "price":7.95,
-      "piece":6,
-      "sides":[
-        "salad",
-        "dressing"
-        ]
-    },
-     {
-      "name":"Fried Chicken Rice",
-      "price":8.95,
-      "piece":1,
-      "sides":[
-        "beans",
-        "carrot",
-        "onions"
-        ]
-    },
-        {
-      "name":"Fried Chiken noodles",
-      "price":8.95,
-      "piece":1,
-      "sides":[
-        "chilly",
-        "mushroom",
-        "spinach"
-        ]
-    },
-        {
-      "name":"Chicken Soup",
-      "price":9.95,
-      "piece":1,
-      "sides":[
-        "carrot",
-        "chives",
-        "pepper"
-        ]
-    },
-        {
-      "name":"Oven baked Chicken",
-      "price":8.95,
-      "piece":6,
-      "sides":[
-        "potato",
-        "Corn"
-        ]
-    }
-    ]
-}
+    "foods":[
+      {
+        "name":"Curry Chicken Katsu",
+        "price":10.95,
+        "piece":1,
+        "sides":[
+          "carrot",
+          "beans",
+          "potato",
+          "rice"
+          ]
+      },
+      {
+        "name":"Crispy Fried Chicken",
+        "price":7.95,
+        "piece":6,
+        "sides":[
+          "salad",
+          "dressing"
+          ]
+      },
+       {
+        "name":"Fried Chicken Rice",
+        "price":8.95,
+        "piece":1,
+        "sides":[
+          "beans",
+          "carrot",
+          "onions"
+          ]
+      },
+          {
+        "name":"Fried Chiken noodles",
+        "price":8.95,
+        "piece":1,
+        "sides":[
+          "chilly",
+          "mushroom",
+          "spinach"
+          ]
+      },
+          {
+        "name":"Chicken Soup",
+        "price":9.95,
+        "piece":1,
+        "sides":[
+          "carrot",
+          "chives",
+          "pepper"
+          ]
+      },
+          {
+        "name":"Oven baked Chicken",
+        "price":8.95,
+        "piece":6,
+        "sides":[
+          "potato",
+          "Corn"
+          ]
+      }
+      ]
+  }

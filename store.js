@@ -58,30 +58,35 @@ xmlhttp.send();
 
 //button 1
 function ShowResult1(){
-  var PbeforeT = prices[0];
-  var PafterT = PbeforeT * tax;
-  var AP = PafterT.tofixed(2)
+  var P1beforeT = prices[0];
   var Result1 = document.getElementById('food1Quatity').value;
   document.getElementById('food1Quatity').value = "";
+  var PT1P = Result1 * P1beforeT;
+  var T1P = PT1P * tax;
+  var F1P = T1P.toFixed(2);
   if(Result1 >0){
+  window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result1 +" " + foods[0] + " $" + AP);
+  var newText = document.createTextNode(Result1 + " " + foods[0] + " $" + F1P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
+  localStorage.setItem("foodS1", newli);
 }
 
 //button 2
 function ShowResult2(){
-  var PbeforeT = prices[1];
-  var PafterT = PbeforeT * tax;
-  var AP = PafterT.tofixed(2)
+  var P2beforeT = prices[1];
   var Result2 = document.getElementById('food2Quatity').value;
   document.getElementById('food2Quatity').value = "";
+  var PT2P = Result2 * P2beforeT;
+  var T2P = PT2P * tax;
+  var F2P = T2P.toFixed(2);
   if(Result2 >0){
+  window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result2 +" " + foods[1] + " $" + AP);
+  var newText = document.createTextNode( Result2 +" " + foods[1] + " $" + F2P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
@@ -90,11 +95,16 @@ function ShowResult2(){
 
 //button 3
 function ShowResult3(){
+  var P3beforeT = prices[2];
   var Result3 = document.getElementById('food3Quatity').value;
   document.getElementById('food3Quatity').value = "";
+  var PT3P = Result3 * P3beforeT;
+  var T3P = PT3P * tax;
+  var F3P = T3P.toFixed(2);
   if(Result3 >0){
+    window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result3 +" " + foods[2]);
+    var newText = document.createTextNode(Result3 + " " + foods[2] + " $" + F3P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
@@ -103,11 +113,16 @@ function ShowResult3(){
 
 //button 4
 function ShowResult4(){
+  var P4beforeT = prices[3];
   var Result4 = document.getElementById('food4Quatity').value;
   document.getElementById('food4Quatity').value = "";
+  var PT4P = Result4 * P4beforeT;
+  var T4P = PT4P * tax;
+  var F4P = T4P.toFixed(2);
   if(Result4 >0){
+    window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result4 +" " + foods[3]);
+    var newText = document.createTextNode(Result4 + " " + foods[3] + " $" + F4P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
@@ -116,31 +131,47 @@ function ShowResult4(){
 
 //button 5
 function ShowResult5(){
+  var P5beforeT = prices[4];
   var Result5 = document.getElementById('food5Quatity').value;
   document.getElementById('food5Quatity').value = "";
+  var PT5P = Result5 * P5beforeT;
+  var T5P = PT5P * tax;
+  var F5P = T5P.toFixed(2);
   if(Result5 >0){
+    window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result5 +" " + foods[4]);
+    var newText = document.createTextNode(Result5 + " " + foods[4] + " $" + F5P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
+  
 }
 
 //button 6
 function ShowResult6(){
+  var P6beforeT = prices[5];
   var Result6 = document.getElementById('food6Quatity').value;
   document.getElementById('food6Quatity').value = "";
+  var PT6P = Result6 * P6beforeT;
+  var T6P = PT6P * tax;
+  var F6P = T6P.toFixed(2);
   if(Result6 >0){
+    window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-  var newText = document.createTextNode( Result6 +" " + foods[5]);
+    var newText = document.createTextNode(Result6 + " " + foods[5] + " $" + F6P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
 }
 
+//button transform to next page
 function nextpage(){
   location.href="result.html";
-  document.getElementById('menu1').innerHTML = localStorage.getItem('Result1');
+  document.getElementById('menu1').innerHTML = localStorage.getItem('foodS1');
+  localStorage.setItem("foodS1", newli);
 }
+
+//page2 java script codes
+document.getElementById('menu1').innerHTML = localStorage.getItem('foodS1');
