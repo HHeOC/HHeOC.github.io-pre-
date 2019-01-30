@@ -78,7 +78,7 @@ function ShowResult1(){
   else{
     window.alert("quantity can't be zero");
   }
-  localStorage.setItem("foodS1", newli);
+  localStorage.setItem("foodS1", F1P);
 }
 
 //button 2
@@ -121,7 +121,7 @@ function ShowResult3(){
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
-    else if(Result3 == ""){
+    else if(Result3 === ""){
   window.alert('please select your quantity');
   }
   else{
@@ -188,7 +188,7 @@ function ShowResult6(){
   if(Result6 >0){
     window.alert('Item has been added, Please scroll down to finish your purchase');
   var newli = document.createElement('li');
-    var newText = document.createTextNode(Result6 + " " + foods[5] + " $" + F6P);
+  var newText = document.createTextNode(Result6 + " " + foods[5] + " $" + F6P);
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
@@ -199,14 +199,14 @@ function ShowResult6(){
   else{
     window.alert("quantity can't be zero");
   }
+  localStorage.setItem('test', newText);
 }
 
 //button transform to next page
 function nextpage(){
   location.href="result.html";
-  document.getElementById('menu1').innerHTML = localStorage.getItem('foodS1');
-  localStorage.setItem("foodS1", newli);
+  
 }
 
 //page2 java script codes
-document.getElementById('menu1').innerHTML = localStorage.getItem('foodS1');
+document.getElementById('menu1').innerHTML = localStorage.getItem('test');
