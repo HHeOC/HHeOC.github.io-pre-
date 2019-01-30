@@ -72,6 +72,12 @@ function ShowResult1(){
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
+  else if(Result1 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
+  }
   localStorage.setItem("foodS1", newli);
 }
 
@@ -91,6 +97,12 @@ function ShowResult2(){
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
+    else if(Result2 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
+  }
 }
 
 //button 3
@@ -108,6 +120,12 @@ function ShowResult3(){
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
+  }
+    else if(Result3 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
   }
 }
 
@@ -127,6 +145,12 @@ function ShowResult4(){
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
+    else if(Result4 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
+  }
 }
 
 //button 5
@@ -145,7 +169,12 @@ function ShowResult5(){
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
   }
-  
+    else if(Result5 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
+  }
 }
 
 //button 6
@@ -163,6 +192,12 @@ function ShowResult6(){
  newli.appendChild(newText);
  var olTag = document.getElementsByTagName('ol')[0];
  olTag.appendChild(newli);
+  }
+    else if(Result6 == ""){
+  window.alert('please select your quantity');
+  }
+  else{
+    window.alert("quantity can't be zero");
   }
 }
 
