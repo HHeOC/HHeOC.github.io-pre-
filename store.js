@@ -199,7 +199,7 @@ function ShowResult6(){
   else{
     window.alert("quantity can't be zero");
   }
-  localStorage.setItem('test', newText);
+  localStorage.setItem('test', F6P);
 }
 
 //button transform to next page
