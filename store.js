@@ -275,14 +275,9 @@ if (AP6 <= 0) {
 }
 //subtotal
 document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
-//reset all
 //button transform to next page
 var Dresult = document.getElementById('DR');
 function nextpage() {
-  if(Dresult == ""){
-    window.alert('select something!');
-  }
-  else{
  location.href = "result.html";
-  }
+ localStorage.clear('load1');
 }
