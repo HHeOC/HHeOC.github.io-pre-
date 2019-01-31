@@ -64,13 +64,13 @@ function ShowResult1(){
   var PT1P = Result1 * P1beforeT;
   var T1P = PT1P * tax;
   var F1P = T1P.toFixed(2);
+     var Save1 = Result1 + " " + foods[0] + " $" + F1P;
+    localStorage.setItem('Store1', Save1);
+    var load1 = localStorage.getItem('Store1'); 
+    localStorage.setItem('P1', F1P);
   if(Result1 >0){
   window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-  var newText = document.createTextNode(Result1 + " " + foods[0] + " $" + F1P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+    document.getElementById('show1').innerHTML = load1;
   }
   else if(Result1 == ""){
   window.alert('please select your quantity');
@@ -79,6 +79,7 @@ function ShowResult1(){
     window.alert("quantity can't be zero");
   }
   localStorage.setItem("foodS1", F1P);
+  AP1=0;
 }
 
 //button 2
@@ -89,13 +90,13 @@ function ShowResult2(){
   var PT2P = Result2 * P2beforeT;
   var T2P = PT2P * tax;
   var F2P = T2P.toFixed(2);
+  var Save2 = Result2 + " " + foods[1] + " $" + F2P;
+  localStorage.setItem('Store2', Save2);
+  var load2 = localStorage.getItem('Store2');
+  localStorage.setItem('P2', F2P);
   if(Result2 >0){
   window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-  var newText = document.createTextNode( Result2 +" " + foods[1] + " $" + F2P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+    document.getElementById('show2').innerHTML = load2;
   }
     else if(Result2 == ""){
   window.alert('please select your quantity');
@@ -113,13 +114,14 @@ function ShowResult3(){
   var PT3P = Result3 * P3beforeT;
   var T3P = PT3P * tax;
   var F3P = T3P.toFixed(2);
+     var Save3 = Result3 + " " + foods[2] + " $" + F3P;
+    localStorage.setItem('Store3', Save3);
+    var load3 = localStorage.getItem('Store3'); 
+    localStorage.setItem('P3', F3P);
   if(Result3 >0){
     window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-    var newText = document.createTextNode(Result3 + " " + foods[2] + " $" + F3P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+
+    document.getElementById('show3').innerHTML = load3;
   }
     else if(Result3 === ""){
   window.alert('please select your quantity');
@@ -137,13 +139,13 @@ function ShowResult4(){
   var PT4P = Result4 * P4beforeT;
   var T4P = PT4P * tax;
   var F4P = T4P.toFixed(2);
+   var Save4 = Result4 + " " + foods[3] + " $" + F4P;
+  localStorage.setItem('Store4', Save4);
+  var load4 = localStorage.getItem('Store4');
+  localStorage.setItem('P4', F4P);
   if(Result4 >0){
     window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-    var newText = document.createTextNode(Result4 + " " + foods[3] + " $" + F4P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+ document.getElementById('show4').innerHTML = load4;
   }
     else if(Result4 == ""){
   window.alert('please select your quantity');
@@ -161,13 +163,13 @@ function ShowResult5(){
   var PT5P = Result5 * P5beforeT;
   var T5P = PT5P * tax;
   var F5P = T5P.toFixed(2);
+  var Save5 = Result5 + " " + foods[4] + " $" + F5P;
+  localStorage.setItem('Store5', Save5);
+  var load5 = localStorage.getItem('Store5');
+  localStorage.setItem('P5', F5P);
   if(Result5 >0){
-    window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-    var newText = document.createTextNode(Result5 + " " + foods[4] + " $" + F5P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+  window.alert('Item has been added, Please scroll down to finish your purchase');
+  document.getElementById('show5').innerHTML = load5;
   }
     else if(Result5 == ""){
   window.alert('please select your quantity');
@@ -175,6 +177,8 @@ function ShowResult5(){
   else{
     window.alert("quantity can't be zero");
   }
+ 
+ 
 }
 
 //button 6
@@ -185,13 +189,13 @@ function ShowResult6(){
   var PT6P = Result6 * P6beforeT;
   var T6P = PT6P * tax;
   var F6P = T6P.toFixed(2);
+  var Save6 = Result6 + " " + foods[5] + " $" + F6P;
+  localStorage.setItem('Store6', Save6);
+  var load6 = localStorage.getItem('Store6');
+  localStorage.setItem('P6', F6P);
   if(Result6 >0){
     window.alert('Item has been added, Please scroll down to finish your purchase');
-  var newli = document.createElement('li');
-  var newText = document.createTextNode(Result6 + " " + foods[5] + " $" + F6P);
- newli.appendChild(newText);
- var olTag = document.getElementsByTagName('ol')[0];
- olTag.appendChild(newli);
+  document.getElementById('show6').innerHTML = load6;
   }
     else if(Result6 == ""){
   window.alert('please select your quantity');
@@ -199,15 +203,86 @@ function ShowResult6(){
   else{
     window.alert("quantity can't be zero");
   }
-  
-  localStorage.setItem('test', newText);
 }
 
-//button transform to next page
-function nextpage(){
-  location.href="result.html";
-  
-}
+
 
 //page2 java script codes
-document.getElementById('menu1').innerHTML = localStorage.getItem('test');
+var load1 = localStorage.getItem('Store1');
+var load2 = localStorage.getItem('Store2');
+var load3 = localStorage.getItem('Store3');
+var load4 = localStorage.getItem('Store4');
+var load5 = localStorage.getItem('Store5');
+var load6 = localStorage.getItem('Store6');
+var AP1 = Number(localStorage.getItem('P1'));
+var AP2 = Number(localStorage.getItem('P2'));
+var AP3 = Number(localStorage.getItem('P3'));
+var AP4 = Number(localStorage.getItem('P4'));
+var AP5 = Number(localStorage.getItem('P5'));
+var AP6 = Number(localStorage.getItem('P6'));
+var ToTal = AP1 + AP2 + AP3 + AP4 + AP5 + AP6;
+var sTotal = ToTal.toFixed(2);
+var ol = document.getElementById('Slist');
+
+//add item
+//first
+var li1 = document.createElement('li'); 
+var liText1 = document.createTextNode(load1); 
+li1.appendChild(liText1);
+ol.appendChild(li1); 
+if(AP1 <= 0 ){
+   ol.removeChild(li1);
+}
+//second
+var li2 = document.createElement('li');
+var liText2 = document.createTextNode(load2);
+li2.appendChild(liText2);
+ol.appendChild(li2);
+if (AP2 <= 0) {
+  ol.removeChild(li2);
+}
+//third
+var li3 = document.createElement('li');
+var liText3 = document.createTextNode(load3);
+li3.appendChild(liText3);
+ol.appendChild(li3);
+if (AP3 <= 0) {
+  ol.removeChild(li3);
+}
+//forth
+var li4 = document.createElement('li');
+var liText4 = document.createTextNode(load4);
+li4.appendChild(liText4);
+ol.appendChild(li4);
+if (AP4 <= 0) {
+  ol.removeChild(li4);
+}
+//fifth
+var li5 = document.createElement('li');
+var liText5 = document.createTextNode(load5);
+li5.appendChild(liText5);
+ol.appendChild(li5);
+if (AP5 <= 0) {
+  ol.removeChild(li5);
+}
+//sixth
+var li6 = document.createElement('li');
+var liText6 = document.createTextNode(load6);
+li6.appendChild(liText6);
+ol.appendChild(li6);
+if (AP6 <= 0) {
+  ol.removeChild(li6);
+}
+//subtotal
+document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
+//reset all
+//button transform to next page
+var Dresult = document.getElementById('DR');
+function nextpage() {
+  if(Dresult == ""){
+    window.alert('select something!');
+  }
+  else{
+ location.href = "result.html";
+  }
+}
