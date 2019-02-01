@@ -233,56 +233,56 @@ var AP5 = Number(localStorage.getItem('P5'));
 var AP6 = Number(localStorage.getItem('P6'));
 var ToTal = AP1 + AP2 + AP3 + AP4 + AP5 + AP6;
 var sTotal = ToTal.toFixed(2);
-var ol = document.getElementById('Slist');
+var olist = document.getElementById('Slist');
 
 //add item
 //first
 var li1 = document.createElement('li');
 var liText1 = document.createTextNode(load1);
 li1.appendChild(liText1);
-ol.appendChild(li1);
+olist.appendChild(li1);
 if(AP1 <= 0 ){
-   ol.removeChild(li1);
+   olist.removeChild(li1);
 }
 //second
 var li2 = document.createElement('li');
 var liText2 = document.createTextNode(load2);
 li2.appendChild(liText2);
-ol.appendChild(li2);
+olist.appendChild(li2);
 if (AP2 <= 0) {
-  ol.removeChild(li2);
+  olist.removeChild(li2);
 }
 //third
 var li3 = document.createElement('li');
 var liText3 = document.createTextNode(load3);
 li3.appendChild(liText3);
-ol.appendChild(li3);
+olist.appendChild(li3);
 if (AP3 <= 0) {
-  ol.removeChild(li3);
+  olist.removeChild(li3);
 }
 //forth
 var li4 = document.createElement('li');
 var liText4 = document.createTextNode(load4);
 li4.appendChild(liText4);
-ol.appendChild(li4);
+olist.appendChild(li4);
 if (AP4 <= 0) {
-  ol.removeChild(li4);
+  olist.removeChild(li4);
 }
 //fifth
 var li5 = document.createElement('li');
 var liText5 = document.createTextNode(load5);
 li5.appendChild(liText5);
-ol.appendChild(li5);
+olist.appendChild(li5);
 if (AP5 <= 0) {
-  ol.removeChild(li5);
+  olist.removeChild(li5);
 }
 //sixth
 var li6 = document.createElement('li');
 var liText6 = document.createTextNode(load6);
 li6.appendChild(liText6);
-ol.appendChild(li6);
+olist.appendChild(li6);
 if (AP6 <= 0) {
-  ol.removeChild(li6);
+  olist.removeChild(li6);
 }
 //subtotal
 document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
