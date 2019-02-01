@@ -289,5 +289,4 @@ document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
 //button transform to next page
 function nextpage() {
  location.href = "result.html";
- localStorage.clear('load1');
 }
