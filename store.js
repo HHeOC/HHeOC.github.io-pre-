@@ -2,6 +2,18 @@
 var foods =[];
 var prices= [];
 var tax = 1.04712;
+localStorage.setItem('Store1', "");
+localStorage.setItem('Store2', "");
+localStorage.setItem('Store3', "");
+localStorage.setItem('Store4', "");
+localStorage.setItem('Store5', "");
+localStorage.setItem('Store6', "");
+localStorage.setItem('P1', "");
+localStorage.setItem('P2', "");
+localStorage.setItem('P3', "");
+localStorage.setItem('P4', "");
+localStorage.setItem('P5', "");
+localStorage.setItem('P6', "");
 //JSON file function. attacch json objects
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
@@ -66,7 +78,7 @@ function ShowResult1(){
   var F1P = T1P.toFixed(2);
      var Save1 = Result1 + " " + foods[0] + " $" + F1P;
     localStorage.setItem('Store1', Save1);
-    var load1 = localStorage.getItem('Store1'); 
+    var load1 = localStorage.getItem('Store1');
     localStorage.setItem('P1', F1P);
   if(Result1 >0){
   window.alert('Item has been added, Please scroll down to finish your purchase');
@@ -116,7 +128,7 @@ function ShowResult3(){
   var F3P = T3P.toFixed(2);
      var Save3 = Result3 + " " + foods[2] + " $" + F3P;
     localStorage.setItem('Store3', Save3);
-    var load3 = localStorage.getItem('Store3'); 
+    var load3 = localStorage.getItem('Store3');
     localStorage.setItem('P3', F3P);
   if(Result3 >0){
     window.alert('Item has been added, Please scroll down to finish your purchase');
@@ -206,7 +218,6 @@ function ShowResult6(){
 }
 
 
-
 //page2 java script codes
 var load1 = localStorage.getItem('Store1');
 var load2 = localStorage.getItem('Store2');
@@ -226,10 +237,10 @@ var ol = document.getElementById('Slist');
 
 //add item
 //first
-var li1 = document.createElement('li'); 
-var liText1 = document.createTextNode(load1); 
+var li1 = document.createElement('li');
+var liText1 = document.createTextNode(load1);
 li1.appendChild(liText1);
-ol.appendChild(li1); 
+ol.appendChild(li1);
 if(AP1 <= 0 ){
    ol.removeChild(li1);
 }
@@ -276,7 +287,6 @@ if (AP6 <= 0) {
 //subtotal
 document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
 //button transform to next page
-var Dresult = document.getElementById('DR');
 function nextpage() {
  location.href = "result.html";
  localStorage.clear('load1');
