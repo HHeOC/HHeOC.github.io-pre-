@@ -237,6 +237,7 @@ var olist = document.getElementById('Slist');
 
 //add item
 //first
+document.getElementById('Slist').innerHTML = AP1;
 var li1 = document.createElement('li');
 var liText1 = document.createTextNode(load1);
 li1.appendChild(liText1);
