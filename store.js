@@ -291,3 +291,6 @@ document.getElementById('subtotal').innerHTML = "Your total is " + "$" +sTotal;
 function nextpage() {
  location.href = "result.html";
 }
+function Return(){
+  location.href = "index.html";
+}
