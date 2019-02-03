@@ -1,18 +1,28 @@
 <html>
+
 <head>
   <link rel="stylesheet" type="text/css" href="store.css">
 </head>
-<body >
+
+<body>
   <div id="StoreTitle">
-      <h1 id="storeT">Github Chicken Six Star Resturant</h1>
-    </div>
+    <h1 id="storeT">Github Chicken Six Star Resturant</h1>
+  </div>
   <div id="recipe">
-  <h1 id="ThankU">Thank You for Purchase!</h1>
-<h1 id="summary">Summary</h1>
-<ol id="Slist"></ol>
-<h2 id="subtotal"></h2>
-<button onclick="Return()">Cancel</button>
+    <h1 id="ThankU">Thank You for Purchase!</h1>
+    <h1 id="summary">Summary</h1>
+    <ol id="Slist"></ol>
+    <h2 id="subtotal"></h2>
+  
+    <h3>
+  <button id="cancel" onclick="Return()">Cancel</button>
+  
+  <button class="ops" onclick="mean()">no tip</button>
+  <button class="ops" onclick="kind()">tip:15%</button>
+  <button class="ops"  onclick="veryKind()">tip:30%</button>
+   </h3>
   </div>
   <script src="store.js"></script>
 </body>
+
 </html>

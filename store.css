@@ -25,12 +25,14 @@ div {
   background-color: gray;
   opacity: 0.8;
 }
+
 #box2 {
-   width: 33vw;
-   height: 5vh;
-   background-color: white;
+  width: 33vw;
+  height: 5vh;
+  background-color: white;
   opacity: 0.55;
 }
+
 p {
   font-size: 20px;
 }
@@ -52,10 +54,12 @@ b {
   margin-bottom: 2vh;
 
 }
-#warn{
+
+#warn {
   color: red;
   text-decoration: none;
 }
+
 #food1 {
   background-image: url('https://japan.recipetineats.com/wp-content/uploads/2017/03/Katsu-Curry2.jpg');
   background-size: cover;
@@ -106,7 +110,7 @@ input {
 
 #result {
   width: 98.5vw;
-  height: 40vh;
+  height: 50vh;
   background-color: white;
   opacity: 0.7;
 }
@@ -121,8 +125,15 @@ input {
 
 #Summary {
   text-align: center;
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 #ThankU {
   text-align: center;
+}
+.ops{
+float: right;
+}
+#cancel{
+  float: left;
 }

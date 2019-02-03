@@ -1,88 +1,105 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="store.css">
-  </head>
-  <body>
-    <div id="StoreTitle">
-      <h1 id="storeT">Github Chicken Six Star Resturant</h1>
-      <img id="logo" src="https://images-platform.99static.com/33-pyDLTARxrpq5t1hn8p_ibRNU=/193x100:996x903/500x500/top/smart/99designs-contests-attachments/71/71759/attachment_71759424" height="60vh" width="150vw">
-    </div>
-    <h1 id="storemenu">MENU</h1>
-    <div id="food1">
-      <h1 id="food1Name">sda</h1>
-      <p id="food1price">ada</p>
-<div id="box2"><h3 id="warn"> Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
-    <div id="box">
-    <b>How many do you want?<input type="number" id="food1Quatity" min=1 max=5>
-    <button id="food1Button" onclick="ShowResult1()">Purchase</button>
-  </b>
-      </div>
-    </div>
-     <div id="food2">
-      <h1 id="food2Name">sda</h1>
-      <p id="food2price">ada</p>
-<div id="box2"><h3 id="warn">  Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
-    <div id="box">
-    <b>How many do you want?<input type="number" id="food2Quatity" min=1 max=5>
-    <button id="food1Button" onclick="ShowResult2()">Purchase</button>
-  </b>
-      </div>
-    </div>
-     <div id="food3">
-       <h1 id="food3Name"></h1>
-      <p id="food3price"></p>
 
-<div id="box2"><h3 id="warn">  Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
+<head>
+  <link rel="stylesheet" type="text/css" href="store.css">
+</head>
+
+<body>
+  <div id="StoreTitle">
+    <h1 id="storeT">Github Chicken Six Star Resturant</h1>
+    <img id="logo" src="https://images-platform.99static.com/33-pyDLTARxrpq5t1hn8p_ibRNU=/193x100:996x903/500x500/top/smart/99designs-contests-attachments/71/71759/attachment_71759424"
+      height="60vh" width="150vw">
+  </div>
+  <h1 id="storemenu">MENU</h1>
+  <div id="food1">
+    <h1 id="food1Name">sda</h1>
+    <p id="food1price">ada</p>
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
+    </div>
+    <br><br><br><br>
     <div id="box">
-<b>How many do you want?<input type="number" id="food3Quatity" min=1 max=5>
-    <button id="food1Button" onclick="ShowResult3()">Purchase</button></b>
-      </div>
+      <b>How many do you want?<input type="number" id="food1Quatity" min=1 max=5 placeholder="1 to 5" >
+        <button id="food1Button" onclick="ShowResult1()">Purchase</button>
+      </b>
     </div>
-     <div id="food4">
-       <h1 id="food4Name"></h1>
-      <p id="food4price"></p>
-<div id="box2"><h3 id="warn">  Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
+  </div>
+  <div id="food2">
+    <h1 id="food2Name">sda</h1>
+    <p id="food2price">ada</p>
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
+    </div>
+    <br><br><br><br>
     <div id="box">
-<b>How many do you want?<input type="number" id="food4Quatity" min=1 max=5>
-    <button id="food1Button" onclick="ShowResult4()">Purchase</button>
-  </b>
-      </div>
+      <b>How many do you want?<input type="number" id="food2Quatity" min=1 max=5 placeholder="1 to 5">
+        <button id="food1Button" onclick="ShowResult2()">Purchase</button>
+      </b>
     </div>
-     <div id="food5">
-      <h1 id="food5Name"></h1>
-      <p id="food5price"></p>
-<div id="box2"><h3 id="warn">  Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
-<div id="box">
-  <b>How many do you want?<input type="number" id="food5Quatity" min=1 max=5>
-    <button id="food1Button" onclick="ShowResult5()">Purchase</button>
-  </b>
-      </div>
+  </div>
+  <div id="food3">
+    <h1 id="food3Name"></h1>
+    <p id="food3price"></p>
+
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
     </div>
-     <div id="food6">
-      <h1 id="food6Name"></h1>
-      <p id="food6price"></p>
-<div id="box2"><h3 id="warn">  Warning: You can only choose quantity once!</h3></div>
-<br><br><br><br><br>
+    <br><br><br><br>
     <div id="box">
-<b>How many do you want?<input type="number" id="food6Quatity" min=1 max=5>
-<button id="food1Button" onclick="ShowResult6()">Purchase</button>
-   </b>
-      </div>
+      <b>How many do you want?<input type="number" id="food3Quatity" min=1 max=5 placeholder="1 to 5">
+        <button id="food1Button" onclick="ShowResult3()">Purchase</button></b>
     </div>
-    <div id="result">
+  </div>
+  <div id="food4">
+    <h1 id="food4Name"></h1>
+    <p id="food4price"></p>
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
+    </div>
+    <br><br><br><br>
+    <div id="box">
+      <b>How many do you want?<input type="number" id="food4Quatity" min=1 max=5 placeholder="1 to 5">
+        <button id="food1Button" onclick="ShowResult4()">Purchase</button>
+      </b>
+    </div>
+  </div>
+  <div id="food5">
+    <h1 id="food5Name"></h1>
+    <p id="food5price"></p>
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
+    </div>
+    <br><br><br><br>
+    <div id="box">
+      <b>How many do you want?<input type="number" id="food5Quatity" min=1 max=5 placeholder="1 to 5">
+        <button id="food1Button" onclick="ShowResult5()">Purchase</button>
+      </b>
+    </div>
+  </div>
+  <div id="food6">
+    <h1 id="food6Name"></h1>
+    <p id="food6price"></p>
+    <div id="box2">
+      <h3 id="warn"> Warning: You can only choose quantity once!</h3>
+    </div>
+    <br><br><br><br>
+    <div id="box">
+      <b>How many do you want?<input type="number" id="food6Quatity" min=1 max=5 placeholder="1 to 5">
+        <button id="food1Button" onclick="ShowResult6()">Purchase</button>
+      </b>
+    </div>
+  </div>
+  <div id="result">
     <p id="show1"></p>
-     <p id="show2"></p>
-      <p id="show3"><p>
-      <p id="show4"></p>
-      <p id="show5"></p>
-      <p id="show6"></p>
-    <button onclick="nextpage()">submit</button>
-    </div>
-    <script src="store.js"></script>
-  </body>
+    <p id="show2"></p>
+    <p id="show3">
+      <p>
+        <p id="show4"></p>
+        <p id="show5"></p>
+        <p id="show6"></p>
+        <button onclick="nextpage()">submit</button>
+  </div>
+  <script src="store.js"></script>
+</body>
+
 </html>
