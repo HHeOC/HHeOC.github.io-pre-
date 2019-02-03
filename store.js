@@ -97,7 +97,7 @@ function ShowResult2(){
   localStorage.setItem('P2', F2P);
   if ((Result2 > 0) && (Result2 < 5)) {
     window.alert('Item has been added, Please scroll down to finish your purchase');
-    document.getElementById('show1').innerHTML = load1;
+    document.getElementById('show2').innerHTML = load2;
   }
   else if (Result2 == 0) {
     window.alert("quantity can't be zero");
@@ -122,7 +122,7 @@ function ShowResult3(){
     localStorage.setItem('P3', F3P);
   if ((Result3 > 0) && (Result3 < 5)) {
     window.alert('Item has been added, Please scroll down to finish your purchase');
-    document.getElementById('show1').innerHTML = load1;
+    document.getElementById('show3').innerHTML = load3;
   }
   else if (Result3 == 0) {
     window.alert("quantity can't be zero");
@@ -147,7 +147,7 @@ function ShowResult4(){
   localStorage.setItem('P4', F4P);
   if ((Result4 > 0) && (Result4 < 5)) {
     window.alert('Item has been added, Please scroll down to finish your purchase');
-    document.getElementById('show1').innerHTML = load1;
+    document.getElementById('show4').innerHTML = load4;
   }
   else if (Result4 == 0) {
     window.alert("quantity can't be zero");
@@ -172,7 +172,7 @@ function ShowResult5(){
   localStorage.setItem('P5', F5P);
   if ((Result5 > 0) && (Result5 < 5)) {
     window.alert('Item has been added, Please scroll down to finish your purchase');
-    document.getElementById('show1').innerHTML = load1;
+    document.getElementById('show5').innerHTML = load5;
   }
   else if (Result5 == 0) {
     window.alert("quantity can't be zero");
@@ -197,7 +197,7 @@ function ShowResult6(){
   localStorage.setItem('P6', F6P);
   if ((Result6 > 0) && (Result6 < 5)) {
     window.alert('Item has been added, Please scroll down to finish your purchase');
-    document.getElementById('show1').innerHTML = load1;
+    document.getElementById('show6').innerHTML = load6;
   }
   else if (Result6 == 0) {
     window.alert("quantity can't be zero");

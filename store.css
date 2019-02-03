@@ -110,9 +110,10 @@ input {
 
 #result {
   width: 98.5vw;
-  height: 50vh;
+  height: 40vh;
   background-color: white;
   opacity: 0.7;
+  overflow: auto;
 }
 
 #recipe {
@@ -127,7 +128,15 @@ input {
   text-align: center;
   text-decoration: underline;
 }
-
+#transN{
+  width:17vw;
+  height:5vh;
+  font-size: 20px;
+  margin-left: 43%;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50d;
+}
 #ThankU {
   text-align: center;
 }
@@ -136,4 +145,6 @@ float: right;
 }
 #cancel{
   float: left;
+  background-color:red;
+  color:black;
 }
